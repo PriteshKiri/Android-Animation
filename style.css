@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    display: box;
+    padding-left: 100px;
+    padding-bottom: 50
+}
+
+.half-circle,
+.middle,
+.antena1,
+.antena2,
+.leg,
+.leg2,
+.hand,
+.hand2 {
+    background: #00CC33;
+
+}
+
+.half-circle {
+    position: absolute;
+    left: 300px;
+    bottom: 450px;
+
+    width: 170px;
+    height: 100px;
+    /* as the half of the width */
+    border-top-left-radius: 90px;
+    /* 100px of height + 10px of border */
+    border-top-right-radius: 90px;
+    /* 100px of height + 10px of border */
+    border-bottom: 0;
+}
+
+.main:hover .half-circle {
+    transition: 1s ease-in-out 0.5s;
+    transform: scale(1.3, 1.1) translateY(10px);
+}
+
+.antena1,
+.antena2 {
+    width: 6px;
+    height: 40px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.antena1 {
+    position: absolute;
+    left: 445px;
+    top: 150px;
+    transform: rotate(20deg);
+}
+
+.antena2 {
+    position: absolute;
+    left: 320px;
+    top: 150px;
+    transform: rotate(-20deg);
+}
+
+.main:hover .antena1,
+.main:hover .antena2 {
+    transition: all 4s ease-out;
+    transform: rotate(1800deg);
+}
+
+.circle1 {
+    position: absolute;
+    left: 340px;
+    top: 210px;
+
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.circle2 {
+    position: absolute;
+    left: 410px;
+    top: 210px;
+
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main:hover .circle1,
+.main:hover .circle2 {
+    transition: all 1s ease 3s;
+    transform: scale(1.7, 1);
+}
+
+.middle {
+    position: absolute;
+    left: 300px;
+    bottom: 250px;
+
+    width: 170px;
+    height: 190px;
+    /* as the half of the width */
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.main:hover .middle {
+    transition: all 2s ease 2s;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    transform: scale(1.3, 1.1) translateY(-10px);
+}
+
+.leg {
+    position: absolute;
+    left: 330px;
+    bottom: 170px;
+
+    width: 28px;
+    height: 70px;
+    /* as the half of the width */
+
+    border-radius: 10px;
+    transform-origin: top;
+}
+
+.main:hover .leg {
+    transition: all 1s ease 1s;
+    transform: rotate(360deg) translateY(-100px);
+    z-index: -1;
+}
+
+.leg2 {
+    position: absolute;
+    left: 425px;
+    bottom: 170px;
+
+    width: 28px;
+    height: 70px;
+    /* as the half of the width */
+
+    border-radius: 10px;
+    transform-origin: top;
+}
+
+.main:hover .leg2 {
+    transition: all 1s ease 1s;
+    transform: rotate(-360deg) translateY(-100px);
+}
+
+.hand {
+    position: absolute;
+    left: 265px;
+    bottom: 325px;
+
+    width: 28px;
+    height: 82px;
+    /* as the half of the width */
+
+    border-radius: 10px;
+
+    /*  transform-origin: top;*/
+}
+
+.main:hover .hand {
+    transition: all 1s ease 1.5s;
+    transform: rotate(180deg) translateX(-80px);
+}
+
+.hand2 {
+    position: absolute;
+    left: 480px;
+    bottom: 325px;
+
+    width: 28px;
+    height: 82px;
+    /* as the half of the width */
+
+    border-radius: 10px;
+}
+
+.main:hover .hand2 {
+    transition: all 1s ease 1.5s;
+    transform: rotate(-180deg) translateX(80px);
+}
+
+.text {
+    color: #00CC33;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+   
+    left: 323px;
+    top: 300px;
+    width: 200px;
+}
+
+.main:hover .text {
+    transition: all 1s ease-in-out 3s;
+    color: white;
+    z-index: 1;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
